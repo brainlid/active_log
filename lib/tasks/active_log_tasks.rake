@@ -17,10 +17,7 @@ namespace :active_log do
         puts "Created : #{ftbc[:target]}"
       }
       
-      puts "Running \"rake db:migrate\" for you..."
-      Rake::Task["db:migrate"].invoke
-      
-     
+      puts "The migration needs to be run after you review for possible customization."
       
       welcome_screen
      
@@ -42,5 +39,7 @@ HERE
 
     puts mesg      
     end
+
+  #TODO: Add rake task to purge expired log entries.
     
 end
