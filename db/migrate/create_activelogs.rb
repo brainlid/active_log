@@ -1,4 +1,5 @@
 class CreateActiveLogs < ActiveRecord::Migration
+  def self.up
     # Create the table for logging model changes.
     create_table :active_logs do |t|
       # Track the ID of the modifying user. Allow for nulls because changes can happen outside a web session
