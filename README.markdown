@@ -64,7 +64,7 @@ user = User.find(1)
 user.active_logs.all
 </code></pre>
 
-In order for this to work, the "has_many :active_logs" would need to be manually added to the User model.
+In order for this to work, the "has_many :active_logs" association would need to be manually added to the User model.
 
 Copyright (c) 2010 Abhishek Parolkar, released under the MIT license
 Copyright (c) 2010 Mark Ericksen on modifications.
